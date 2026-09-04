@@ -1,0 +1,39 @@
+{
+  "name": "genpark-spreadsheet-data-sanitization-normalizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Tabular spreadsheet data sanitization normalizer resolving currency strings, mixed date formats, and null values.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "data-analytics",
+  "tags": [
+    "livedocs",
+    "julius-ai",
+    "data-cleaning",
+    "spreadsheet-normalizer",
+    "etl"
+  ],
+  "inputs": {
+    "dataset_name": {
+      "type": "string"
+    },
+    "raw_rows_sample": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "sanitization_id": {
+      "type": "string"
+    },
+    "dirty_fields_repaired": {
+      "type": "integer"
+    },
+    "date_format_unified_iso8601": {
+      "type": "boolean"
+    },
+    "clean_export_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
